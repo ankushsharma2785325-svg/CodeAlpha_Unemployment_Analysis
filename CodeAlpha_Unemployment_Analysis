@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {
+    'Year':[2019,2020,2021,2022,2023],
+    'Unemployment_Rate':[5.3,8.0,7.2,6.1,5.5]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+plt.plot(df['Year'], df['Unemployment_Rate'], marker='o')
+plt.title("Unemployment Analysis")
+plt.xlabel("Year")
+plt.ylabel("Unemployment Rate (%)")
+plt.show()
